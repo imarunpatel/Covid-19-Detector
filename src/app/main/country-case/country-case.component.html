@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row py-5 mt-4">
+        <br>
+        <div class="col text-center">
+            <h1>Total Coronavirus Cases in India</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card-counter primary">
+              <span *ngIf="isLoading">Loading Data..</span>
+              <span class="count-numbers">{{indiaData?.active_cases}}</span>
+              <span class="count-name">Active Cases</span>
+            </div>
+          </div>
+      
+          <div class="col-md-3">
+            <div class="card-counter danger">
+              <span *ngIf="isLoading">Loading Data..</span>
+              <span class="count-numbers">{{indiaData?.new_cases}}</span>
+              <span class="count-name">New Cases</span>
+            </div>
+          </div>
+      
+          <div class="col-md-3">
+            <div class="card-counter success">
+              <span *ngIf="isLoading">Loading Data..</span>
+              <span class="count-numbers">{{indiaData?.new_deaths}}</span>
+              <span class="count-name">New Deaths</span>
+            </div>
+          </div>
+      
+          <div class="col-md-3">
+            <div class="card-counter info">
+              <span *ngIf="isLoading">Loading Data..</span>
+              <span class="count-numbers">{{indiaData?.total_recovered}}</span>
+              <span class="count-name">Total Recovered</span>
+            </div>
+          </div>
+    </div>
+    
+</div>
+<app-data-chart></app-data-chart>

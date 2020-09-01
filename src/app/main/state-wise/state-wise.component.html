@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1>Coronavirus (COVID-19) statics</h1>
+      </div>
+    </div>
+    <div class="row">
+        <div class="state-wise">
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Confirmed</th>
+                    <th scope="col">Death</th>
+                    <th scope="col">Recovered</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let state of stateWiseData">
+                    <td>{{state.state}}</td>
+                    <td>{{state.confirmed}}</td>
+                    <td>{{state.deaths}}</td>
+                    <td>{{state.recovered}}</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+
