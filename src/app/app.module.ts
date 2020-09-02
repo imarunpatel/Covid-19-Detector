@@ -10,6 +10,7 @@ import { StateWiseComponent } from './main/state-wise/state-wise.component';
 import { AngularMaterialModule } from './angular-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataChartComponent } from './main/data-chart/data-chart.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DataChartComponent } from './main/data-chart/data-chart.component';
     CountryCaseComponent,
     HeaderComponent,
     StateWiseComponent,
-    DataChartComponent
+    DataChartComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
