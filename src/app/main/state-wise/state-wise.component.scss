@@ -3,7 +3,18 @@
     margin: auto;
     padding: 10px;
     background-color: rgba(202, 202, 201, 0.795);
+    font-family: 'Titillium Web', sans-serif;
 }
+
+.animate__animated.animate__backInLeft {
+    --animate-duration: 3s;
+    --animate-delay: 10.9s;
+  }
+  
+  h1 {
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+  }
 
 .mat-form-field + .mat-form-field {
     margin-left: 8px;
@@ -17,9 +28,6 @@
       margin: auto;
   }
 
-  h1 {
-      font-size: 3em;
-  }
 
   .table-head {
       background-color: #ef5350;
