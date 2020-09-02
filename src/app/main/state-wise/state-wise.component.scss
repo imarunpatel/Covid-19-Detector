@@ -1,8 +1,8 @@
 .state-wise {
-    width: 60%;
+    width: 70%;
     margin: auto;
     padding: 10px;
-    background-color: rgba(100, 99, 99, 0.267);
+    background-color: rgba(202, 202, 201, 0.795);
 }
 
 .mat-form-field + .mat-form-field {
@@ -12,3 +12,15 @@
   mat-accordion {
       margin-bottom: 10px;
   } 
+
+  mat-spinner {
+      margin: auto;
+  }
+
+  h1 {
+      font-size: 3em;
+  }
+
+  .table-head {
+      background-color: #ef5350;
+  }

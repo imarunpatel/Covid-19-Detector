@@ -1,3 +1,12 @@
 .navbar {
     box-shadow: 0 8px 6px -6px black;
 }
+
+.active-link-tag {
+    background-color: rgb(243, 243, 243);
+    border-radius: 14px;
+}
+
+nav li a {
+    color: #ef5350;
+}

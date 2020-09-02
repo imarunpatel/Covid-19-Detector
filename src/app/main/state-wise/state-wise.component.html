@@ -1,13 +1,15 @@
 <div class="container">
-    <div class="row">
-      <div class="col text-center">
+    <div class="row pt-5">
+      <div class="col text-center mb-4 mt-1">
         <h1>Coronavirus (COVID-19) statics</h1>
+        <hr>
       </div>
     </div>
     <div class="row">
         <div class="state-wise">
-            <table class="table">
-                <thead class="thead-dark">
+          <mat-spinner *ngIf="isLoading"></mat-spinner>
+            <table class="table" *ngIf="!isLoading">
+                <thead class="table-head">
                   <tr>
                     <th scope="col">Name</th>
                     <th scope="col">Confirmed</th>

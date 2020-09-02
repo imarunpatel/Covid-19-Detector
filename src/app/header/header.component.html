@@ -6,10 +6,15 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" routerLink="" routLinkActivate="active">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link"  
+            routerLink="/" 
+            routerLinkActive="active-link-tag" 
+            [routerLinkActiveOptions]="{exact:true}">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="state-wise" routerLinkActivate="active">State Wise</a>
+          <a class="nav-link" 
+            routerLink="state-wise" 
+            routerLinkActive="active-link-tag" >State Wise</a>
         </li>
       </ul>
     </div>

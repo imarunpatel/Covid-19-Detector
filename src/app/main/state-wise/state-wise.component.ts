@@ -8,16 +8,18 @@ import { DataService } from 'src/app/shared/data.service';
 })
 export class StateWiseComponent implements OnInit {
   panelOpenState = false;
+  isLoading;
 
   constructor(private dataService: DataService) { }
 
   stateWiseData;
 
   ngOnInit(): void {
+    this.isLoading = true;
     this.dataService.getIndiaStateWiseData().subscribe(
       (data) => {
         this.stateWiseData = data;
-        console.log(this.stateWiseData);
+        this.isLoading = false;
       }
     )
   }
