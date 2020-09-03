@@ -22,6 +22,8 @@ export class StateWiseComponent implements OnInit {
         this.isLoading = false;
       }
     )
-  }
 
+    
+  };
+  
 }

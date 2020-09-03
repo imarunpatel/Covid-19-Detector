@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mb-5">
     <div class="row pt-5">
       <div class="col text-center mb-4 mt-1">
         <h1 class="animate__animated animate__backInLeft">Coronavirus (COVID-19) statics</h1>
@@ -6,6 +6,12 @@
       </div>
     </div>
     <div class="row">
+      <div class="col-md-6">
+        <div class="row">
+          <app-state-chart></app-state-chart>
+        </div>
+      </div>
+      <div class="col-md-6">
         <div class="state-wise">
           <mat-spinner *ngIf="isLoading"></mat-spinner>
             <table class="table" *ngIf="!isLoading">
@@ -28,6 +34,9 @@
                 </tbody>
               </table>
         </div>
+      </div>
+        
     </div>
+    
 </div>
 

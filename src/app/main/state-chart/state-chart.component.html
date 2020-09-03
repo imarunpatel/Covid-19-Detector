@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <select name="" id="" class="form-control" id="c" #loc (change)='onSelectLocation(loc.value)'>
+                <option value="{{loc}}" *ngFor="let loc of locations" value="">{{loc}}</option>
+            </select>
+            <div   id="divChart" >
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>

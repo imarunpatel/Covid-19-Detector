@@ -11,6 +11,8 @@ import { AngularMaterialModule } from './angular-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataChartComponent } from './main/data-chart/data-chart.component';
 import { FooterComponent } from './footer/footer.component';
+import { StateChartComponent } from './main/state-chart/state-chart.component';
+import { OneChartComponent } from './main/state-chart/one-chart/one-chart.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     StateWiseComponent,
     DataChartComponent,
-    FooterComponent
+    FooterComponent,
+    StateChartComponent,
+    OneChartComponent
   ],
   imports: [
     BrowserModule,
