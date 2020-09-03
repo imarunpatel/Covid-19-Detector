@@ -73,7 +73,6 @@ export class StateChartComponent implements OnInit {
           this.allDates.push(newItem.day);
 
           newItem.regional.forEach(state => {
-
             if(state.loc == 'Delhi') {
               this.DelhiData.confirmedCasesIndian.push(state.confirmedCasesIndian);
               this.DelhiData.confirmedCasesForeign.push(state.confirmedCasesForeign);

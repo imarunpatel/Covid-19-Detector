@@ -34,6 +34,7 @@ export class DistrictDetailComponent implements OnInit {
   currentState;
   onSelectState(state: string) {
     this.currentState= state;
+    console.log(this.allData);
     this.allData.forEach(item => {
       if (item.state == state) {
         let currentState = item.district;
@@ -56,7 +57,7 @@ export class DistrictDetailComponent implements OnInit {
     this.allData.forEach(item => {
       let districts = item.district;
       for(var i in districts) {
-        if (i == 'Ahmednagar') {
+        if (i == district) {
           this.districtActive = item.district[i].active;
           this.districtConfirmed = item.district[i].confirmed;
           this.districtDecreased = item.district[i].deceased;
