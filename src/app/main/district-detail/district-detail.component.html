@@ -1,0 +1,45 @@
+<div class="container mt-5">
+    <hr>
+    <div class="row pt-4">
+        <div class="col-sm-6">
+            <select name="" id="" class="form-control" id="c" #loc (change)='onSelectState(loc.value)' >
+                <option value="">Select State</option>
+                <option value="{{loc}}" *ngFor="let loc of allStates" value="">{{loc}}</option>
+            </select>
+        </div>
+        <div class="col-sm-6">
+            <select name="" id="" class="form-control" id="c" #district (change)='onSelectDistrict(district.value)' >
+                <option value="">Select District</option>
+                <option value="{{district}}" *ngFor="let district of currentStateDistricts" value="" >{{district}}</option>
+            </select>
+        </div>
+
+        
+    </div>
+    <div class="row mt-4">
+        <div class="col-sm-6">
+            <div class="card-counter primary">
+                <span class="count-numbers">{{districtActive}}</span>
+                <span class="count-name">Active Cases</span>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card-counter danger">
+                <span class="count-numbers">{{districtConfirmed}}</span>
+                <span class="count-name">Confirmed Cases</span>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card-counter success">
+                <span class="count-numbers">{{districtDecreased}}</span>
+                <span class="count-name">Decreased Cases</span>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card-counter info">
+                <span class="count-numbers">{{districtRecovered}}</span>
+                <span class="count-name">Recovered Cases</span>
+            </div>
+        </div>
+    </div>
+</div>

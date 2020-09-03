@@ -13,6 +13,7 @@ import { DataChartComponent } from './main/data-chart/data-chart.component';
 import { FooterComponent } from './footer/footer.component';
 import { StateChartComponent } from './main/state-chart/state-chart.component';
 import { OneChartComponent } from './main/state-chart/one-chart/one-chart.component';
+import { DistrictDetailComponent } from './main/district-detail/district-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { OneChartComponent } from './main/state-chart/one-chart/one-chart.compon
     DataChartComponent,
     FooterComponent,
     StateChartComponent,
-    OneChartComponent
+    OneChartComponent,
+    DistrictDetailComponent
   ],
   imports: [
     BrowserModule,

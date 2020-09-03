@@ -230,7 +230,6 @@ export class StateChartComponent implements OnInit {
 
   addData(state: string) {
     if(state == 'Delhi') {
-      console.log('data pushed d')
       this.myChart.data.labels = this.DelhiData.dates.splice(1, 30);
       this.myChart.data.datasets[0].data = this.DelhiData.confirmedCasesIndian.splice(1, 30);
       this.myChart.data.datasets[1].data = this.DelhiData.deaths.splice(1, 30);
@@ -238,7 +237,6 @@ export class StateChartComponent implements OnInit {
       this.myChart.update()
     }
     if (state == 'Haryana') {
-      console.log('data pushed h')
       this.myChart.data.labels = this.allDates.splice(1, 30);
       this.myChart.data.datasets[0].data = this.Haryana.confirmedCasesIndian.splice(1, 30);
       this.myChart.data.datasets[1].data = this.Haryana.deaths.splice(1, 30);
@@ -246,7 +244,6 @@ export class StateChartComponent implements OnInit {
       this.myChart.update()
     }
     if (state == 'Karnataka') {
-      console.log('data pushed k')
       this.myChart.data.labels = this.allDates.splice(1, 30);
       this.myChart.data.datasets[0].data = this.Karnataka.confirmedCasesIndian.splice(1, 30);
       this.myChart.data.datasets[1].data = this.Karnataka.deaths.splice(1, 30);
@@ -254,7 +251,6 @@ export class StateChartComponent implements OnInit {
       this.myChart.update()
     }
     if (state == 'Kerala') {
-      console.log('data pushed k')
       this.myChart.data.labels = this.allDates.splice(1, 30);
       this.myChart.data.datasets[0].data = this.Kerala.confirmedCasesIndian.splice(1, 30);
       this.myChart.data.datasets[1].data = this.Kerala.deaths.splice(1, 30);
@@ -262,7 +258,6 @@ export class StateChartComponent implements OnInit {
       this.myChart.update()
     }
     if (state == 'Maharashtra') {
-      console.log('data pushed k')
       this.myChart.data.labels = this.allDates.splice(1, 30);
       this.myChart.data.datasets[0].data = this.Maharashtra.confirmedCasesIndian.splice(1, 30);
       this.myChart.data.datasets[1].data = this.Maharashtra.deaths.splice(1, 30);
@@ -270,7 +265,6 @@ export class StateChartComponent implements OnInit {
       this.myChart.update()
     }
     if (state == 'Punjab') {
-      console.log('data pushed k')
       this.myChart.data.labels = this.allDates.splice(1, 30);
       this.myChart.data.datasets[0].data = this.Punjab.confirmedCasesIndian.splice(1, 30);
       this.myChart.data.datasets[1].data = this.Punjab.deaths.splice(1, 30);
@@ -278,7 +272,6 @@ export class StateChartComponent implements OnInit {
       this.myChart.update()
     }
     if (state == 'Rajasthan') {
-      console.log('data pushed k')
       this.myChart.data.labels = this.allDates.splice(1, 30);
       this.myChart.data.datasets[0].data = this.Rajasthan.confirmedCasesIndian.splice(1, 30);
       this.myChart.data.datasets[1].data = this.Rajasthan.deaths.splice(1, 30);
@@ -286,7 +279,6 @@ export class StateChartComponent implements OnInit {
       this.myChart.update()
     }
     if (state == 'Tamil Nadu') {
-      console.log('data pushed k')
       this.myChart.data.labels = this.allDates.splice(1, 30);
       this.myChart.data.datasets[0].data = this.TamilNadu.confirmedCasesIndian.splice(1, 30);
       this.myChart.data.datasets[1].data = this.TamilNadu.deaths.splice(1, 30);
@@ -294,7 +286,6 @@ export class StateChartComponent implements OnInit {
       this.myChart.update()
     }
     if (state == 'Telengana') {
-      console.log('data pushed k')
       this.myChart.data.labels = this.allDates.splice(1, 30);
       this.myChart.data.datasets[0].data = this.Telangana.confirmedCasesIndian.splice(1, 30);
       this.myChart.data.datasets[1].data = this.Telangana.deaths.splice(1, 30);
@@ -302,7 +293,6 @@ export class StateChartComponent implements OnInit {
       this.myChart.update()
     }
     if (state == 'Jammu and Kashmir') {
-      console.log('data pushed k')
       this.myChart.data.labels = this.allDates.splice(1, 30);
       this.myChart.data.datasets[0].data = this.JammuKashmir.confirmedCasesIndian.splice(1, 30);
       this.myChart.data.datasets[1].data = this.JammuKashmir.deaths.splice(1, 30);
@@ -310,7 +300,6 @@ export class StateChartComponent implements OnInit {
       this.myChart.update()
     }
     if (state == 'Ladakh') {
-      console.log('data pushed k')
       this.myChart.data.labels = this.allDates.splice(1, 30);
       this.myChart.data.datasets[0].data = this.Ladakh.confirmedCasesIndian.splice(1, 30);
       this.myChart.data.datasets[1].data = this.Ladakh.deaths.splice(1, 30);
@@ -318,7 +307,6 @@ export class StateChartComponent implements OnInit {
       this.myChart.update()
     }
     if (state == 'Uttar Pradesh') {
-      console.log('data pushed k')
       this.myChart.data.labels = this.allDates.splice(1, 30);
       this.myChart.data.datasets[0].data = this.UttarPradesh.confirmedCasesIndian.splice(1, 30);
       this.myChart.data.datasets[1].data = this.UttarPradesh.deaths.splice(1, 30);

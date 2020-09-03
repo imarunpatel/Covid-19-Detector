@@ -30,7 +30,7 @@ export class DataService {
       })
     )
   }
-
+ 
   getCountryWiseData() {
     let IndiaData = {};
     const api = 'https://corona-virus-world-and-india-data.p.rapidapi.com/api';
